@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Book Search</title>
+
+  </head>
+  <body>
+
+  <div class="container">
+    <div style="background:transparent !important" class="jumbotron">
+      <div style="font-family: 'Pacifico', cursive;">
+        <p>
+          <center>
+          <font size="8">Search for Books</font>
+          </center>
+        </p>
+      </div>
+    </div>
+
+  <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Preview Link</th>
+        </tr>
+      </thead>
+{% for hit in res %}
+<tbody>
+  <tr>
+    <td><a href="{{ hit['_source']['infoLink'] }}">{{ hit['_source']['title'] }}</a></td>
+    
+    <!-- <th scope="row">{{ hit['_source']['title'] }}</th> -->
+    <td>{{ hit['_source']['authors'] }}</td>
+    <td>{{ hit['_source']['description'] }}</td>
+    <td><a href="{{ hit['_source']['previewLink'] }}">Preview Book</a></td>
+  </tr>
+</tbody>
+{% endfor %}
+</table>
+
+        <footer class="footer">
+          <p>&copy; This project is done by Anandhi(as5326) ,Anju (at3358) ,Astha (aj887), Harshita (hg449) and Manasa(mj658).</p>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>
