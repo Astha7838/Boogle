@@ -50,6 +50,9 @@ B. STEPS TO DEPLOY APPLICATION ON HEROKU:
 Currently, the usage of the Drexel account would require VPN, Cisco to be specific, in order to access the provided TUX URL. This would work in a local environment, but upon deployment, the URL would not be accessible because of the lack of VPN. Therefore, we can create a personal trial account, valid only for 15 days, in order to make use of ElasticSearch.
 
 https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/
+
 https://learn.dcollege.net/ultra/courses/_262343_1/cl/outline
 
 You need to sign up here :https://cloud.elastic.co/registration?elektra=downloads-overview&storm=elasticsearch%20 
+
+APPLICATION LINK : https://boogle123.herokuapp.com/
