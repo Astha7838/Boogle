@@ -46,7 +46,7 @@ request_body = {
                 "description":{
                     "type": "text" ,
                     "analyzer": "english",
-                    "similarity":"custom_bm25"
+                    "similarity":"custom_dfr"
                     },
                   "id" : {
                   "type" : "long"
@@ -60,7 +60,7 @@ request_body = {
                 "title":{
                     "type": "text" ,
                     "analyzer": "english",
-                    "similarity":"custom_dfr"
+                    "similarity":"custom_bm25"
                     },
 
                 }
